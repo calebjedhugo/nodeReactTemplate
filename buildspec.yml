@@ -11,9 +11,9 @@ phases:
     commands:
       - echo Build started on `date`
       - npm install -p
-      - npm cd client
+      - cd client
       - npm install
-      - npm cd ../
+      - cd ../
       - npm build
       - npm rmdir client
   post_build:
