@@ -2,7 +2,7 @@
   "name": "nodeTest",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir build && cd client && npm i && npm run build && mv build/* ../build && cd ../",
+    "build": "mkdir build && cd client && npm i && npm run build && mv build/* ../build && rmdir build && cd ../",
     "client": "cd client && npm start",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
