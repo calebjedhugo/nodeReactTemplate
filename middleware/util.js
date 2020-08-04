@@ -1,4 +1,4 @@
-const router = new express().Router()
+const router = require('express').Router()
 
 //bodyParser
 const bodyParser = require('body-parser')

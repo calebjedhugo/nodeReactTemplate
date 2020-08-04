@@ -10,4 +10,6 @@ if(!env){
   require('dotenv').config();
 }
 
+app.use(require('./controller.js'))
+
 app.listen(port || defaultPort, () => console.log(`Server listening on port ${port || defaultPort}!`))
